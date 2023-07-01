@@ -1,0 +1,176 @@
+body {
+  background-color: #adabab;
+}
+.header {
+  display: grid;
+  grid-template-areas: "hero";
+}
+.hero {
+  display: flex;
+  grid-area: hero;
+  min-height: 480px;
+  background-image: url(../img/headweb7.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  align-items: end;
+}
+.hero > * {
+  display: block;
+}
+button.btn-1:hover {
+  background-color: #ff0000;
+  color: white;
+  border: 1px solid #ddd;
+}
+button.btn-1 {
+  border: 1px solid #ce0101;
+  background-color: white;
+  color: #ff0000;
+  margin-left: 8rem;
+  margin-right: 3rem;
+}
+button.btn-2:hover {
+  background-color: white;
+  color: #ff0000;
+  border: 1px solid #ce0101;
+}
+button.btn-2 {
+  color: white;
+  background-color: #ff0000;
+  border: 1px solid #ddd;
+}
+
+/* introduction */
+.presiden {
+  background-color: #f6f6f6;
+  margin: auto;
+  padding: 30px 90px 30px 30px;
+  display: grid;
+  grid-template-columns: 2.5fr 2fr;
+  grid-template-areas: "gambar text";
+  place-items: center;
+}
+img {
+  width: 50%;
+}
+img.img-1 {
+  grid-area: gambar;
+  display: grid;
+  justify-self: center;
+}
+.pahlawan {
+  background-color: #fff;
+  margin: auto;
+  padding: 30px 30px 30px 90px;
+  display: grid;
+  grid-template-columns: 2fr 2.5fr;
+  grid-template-areas: "paragraf Pahlawan ";
+  place-items: center;
+}
+img {
+  width: 50%;
+}
+img.img-2 {
+  grid-area: Pahlawan;
+  display: grid;
+  justify-self: center;
+}
+.text-2 {
+  grid-area: paragraf;
+}
+h3 {
+  font-family: "Belanosima", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* responsive */
+@media (min-width: 1440px) {
+  .hero {
+    background-image: url(../img/headweb7.png);
+  }
+}
+@media (max-width: 1100px) {
+  button.btn-1 {
+    margin-left: 5rem;
+  }
+  .presiden {
+    grid-template-columns: 4fr 2fr;
+  }
+  .pahlawan {
+    grid-template-columns: 2fr 4fr;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    background-image: url(../img/INDONESIA.png);
+    min-height: 730px;
+  }
+  .button {
+    display: grid;
+    grid-template-areas: "tombol1" "tombol2";
+  }
+  button.btn-1 {
+    grid-area: tombol1;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  button.btn-2 {
+    grid-area: tombol2;
+  }
+  .presiden {
+    grid-template-areas: "gambarPre" "text2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1.5fr;
+    padding: 30px;
+    gap: 40px;
+  }
+  img {
+    width: 100%;
+  }
+  img.img-1 {
+    grid-area: gambarPre;
+  }
+  .text-1 {
+    grid-area: text2;
+    text-align: center;
+  }
+  .pahlawan {
+    grid-template-areas: "pahlawan2" "paragraf2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1.5fr;
+    padding: 30px;
+    gap: 30px;
+  }
+  img {
+    width: 100%;
+  }
+  img.img-2 {
+    grid-area: pahlawan2;
+  }
+  .text-2 {
+    grid-area: paragraf2;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    background-image: url(../img/INDONESIA.png);
+    min-height: 600px;
+  }
+  .button {
+    display: grid;
+    grid-template-areas: "tombol1" "tombol2";
+  }
+  button.btn-1 {
+    grid-area: tombol1;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  button.btn-2 {
+    grid-area: tombol2;
+  }
+}
