@@ -1,0 +1,18 @@
+body {
+  background-color: blue;
+}
+.soekarno {
+  display: grid;
+  grid-template-areas: "soekarno text-1";
+  grid-template-columns: 2fr 3fr;
+  place-items: center;
+}
+img {
+  width: 50%;
+}
+.imgSoekarno {
+  grid-area: soekarno;
+}
+.textSoekarno {
+  grid-area: text-1;
+}

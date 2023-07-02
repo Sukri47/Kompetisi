@@ -84,6 +84,14 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/* footer */
+.footer {
+  display: grid;
+  background-color: #adabab;
+  grid-template-rows: minmax(60px, 100px);
+  place-items: center;
+}
 /* responsive */
 @media (min-width: 1440px) {
   .hero {
