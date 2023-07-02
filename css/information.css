@@ -1,6 +1,12 @@
 body {
   background-color: blue;
 }
+h2 {
+  font-family: "Urbanist", sans-serif;
+}
+.presiden h2 {
+  margin: 0;
+}
 .namaPresiden {
   display: grid;
   grid-template-areas: "soekarno text-1";
@@ -10,7 +16,7 @@ body {
 img {
   width: 50%;
 }
-.soekarnoButton {
+.presidenButton {
   font-family: "Libre Baskerville", serif;
 }
 .imgPresiden {
@@ -19,4 +25,26 @@ img {
 .textPresiden {
   font-family: "Ysabeau Infant", sans-serif;
   grid-area: text-1;
+}
+
+/* pahlawan */
+.pahlawan {
+  background-color: #ececec;
+}
+.pahlawan h2 {
+  margin-bottom: 0;
+}
+/* responsive breakpoint */
+@media (max-width: 768px) {
+  .namaPresiden {
+    display: grid;
+    grid-template-areas: "soekarno" "text-1";
+    grid-template-columns: 1fr;
+    gap: 20px;
+    place-items: center;
+    text-align: center;
+  }
+  .presidenButton {
+    line-height: 25px;
+  }
 }
