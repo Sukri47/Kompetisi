@@ -4,6 +4,9 @@ body {
 h2 {
   font-family: "Urbanist", sans-serif;
 }
+.presiden {
+  background-color: #ececec;
+}
 .presiden h2 {
   margin: 0;
 }
@@ -29,10 +32,17 @@ img {
 
 /* pahlawan */
 .pahlawan {
-  background-color: #ececec;
+  background-color: #fff;
 }
 .pahlawan h2 {
   margin-bottom: 0;
+}
+/* footer */
+.footer {
+  display: grid;
+  background-color: #adabab;
+  grid-template-rows: minmax(60px, 100px);
+  place-items: center;
 }
 /* responsive breakpoint */
 @media (max-width: 768px) {
