@@ -1,7 +1,7 @@
 body {
   background-color: blue;
 }
-.soekarno {
+.namaPresiden {
   display: grid;
   grid-template-areas: "soekarno text-1";
   grid-template-columns: 2fr 3fr;
@@ -10,9 +10,13 @@ body {
 img {
   width: 50%;
 }
-.imgSoekarno {
+.soekarnoButton {
+  font-family: "Libre Baskerville", serif;
+}
+.imgPresiden {
   grid-area: soekarno;
 }
-.textSoekarno {
+.textPresiden {
+  font-family: "Ysabeau Infant", sans-serif;
   grid-area: text-1;
 }
